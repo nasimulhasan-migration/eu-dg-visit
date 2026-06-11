@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prottasha II — Achievement So Far, up to April 2026" />
+  <title>Achievement So Far — Prottasha II, April 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#00796b',
+              'green-dark': '#006052',
+              red: '#b21f2d',
+              'red-soft': '#f8ebe7',
+              blue: '#0d5ca8',
+              'blue-soft': '#e7f4ff',
+              purple: '#7c3f9b',
+              'purple-soft': '#f4ecfb',
+              olive: '#657141',
+              pink: '#e21883',
+            },
+          },
+          fontFamily: {
+            sans: ['Segoe UI', 'system-ui', '-apple-system', 'Arial', 'sans-serif'],
+          },
+          boxShadow: {
+            card: '0 14px 35px rgba(20, 50, 80, 0.09)',
+          },
+        },
+      },
+    };
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .bg-pattern {
+        background-image:
+          linear-gradient(135deg, rgba(0, 121, 107, 0.035) 25%, transparent 25%) -12px 0/24px 24px,
+          linear-gradient(225deg, rgba(0, 121, 107, 0.035) 25%, transparent 25%) -12px 0/24px 24px;
+      }
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; }
+      .shadow-card { box-shadow: none !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#f8fbfb] bg-pattern text-slate-800 antialiased">
+
+  <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
+
+    <!-- Logo lock — full content width -->
+    <img
+      src="logolock.png"
+      alt="Prottasha II — European Union — BRAC"
+      class="mb-8 w-full rounded-2xl object-contain"
+    />
+
+    <!-- Title row -->
+    <div class="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h1 class="text-4xl font-extrabold uppercase leading-none tracking-tight text-brand-green sm:text-5xl lg:text-6xl">
+          Achievement So Far
+        </h1>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <button
+          id="fullscreen-btn"
+          type="button"
+          aria-label="Toggle fullscreen"
+          title="Toggle fullscreen"
+          class="no-print inline-flex shrink-0 items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-green/30 sm:px-4"
+        >
+          <svg id="icon-enter" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+          </svg>
+          <svg id="icon-exit" class="hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M15 9h4.5M15 9V4.5M15 9l5.25-5.25M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
+          </svg>
+          <span class="hidden sm:inline" id="fullscreen-label">Fullscreen</span>
+        </button>
+        <div class="inline-flex w-fit items-center rounded-full bg-brand-green px-5 py-3 text-sm font-extrabold uppercase tracking-wide text-white shadow-card sm:text-base">
+          Up to April 2026
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary cards -->
+    <section class="mb-8 grid gap-5 lg:grid-cols-3" aria-label="Top achievement summary">
+
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="border-t-[6px] border-brand-red px-5 pb-5 pt-4">
+          <h2 class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase text-brand-red">
+            <span class="text-2xl" aria-hidden="true">🧰</span> Immediate Assistance
+          </h2>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">April</p>
+              <p class="mt-1 text-2xl font-extrabold text-slate-800">310</p>
+            </div>
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Total</p>
+              <p class="mt-1 text-2xl font-extrabold text-slate-800">6,500</p>
+            </div>
+            <div class="col-span-2 rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Gender split</p>
+              <div class="mt-2 grid grid-cols-2 gap-2 text-sm">
+                <span>Women <strong class="text-base text-slate-800">220</strong></span>
+                <span>Men <strong class="text-base text-slate-800">6,280</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="border-t-[6px] border-brand-olive px-5 pb-5 pt-4">
+          <h2 class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase text-brand-olive">
+            <span class="text-2xl" aria-hidden="true">💵</span> Financial Assistance
+          </h2>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">April</p>
+              <p class="mt-1 text-2xl font-extrabold text-slate-800">449</p>
+            </div>
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Total</p>
+              <p class="mt-1 text-2xl font-extrabold text-slate-800">4,796</p>
+            </div>
+            <div class="col-span-2 rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Gender split</p>
+              <div class="mt-2 grid grid-cols-2 gap-2 text-sm">
+                <span>Women <strong class="text-base text-slate-800">1,189</strong></span>
+                <span>Men <strong class="text-base text-slate-800">3,607</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="border-t-[6px] border-brand-green px-5 pb-5 pt-4">
+          <h2 class="mb-4 flex items-center gap-2 text-sm font-extrabold uppercase text-brand-green-dark">
+            <span class="text-2xl" aria-hidden="true">📣</span> Awareness &amp; Sensitization
+          </h2>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">April</p>
+              <p class="mt-1 text-xl font-extrabold text-slate-800 sm:text-2xl">383,103</p>
+            </div>
+            <div class="rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Total</p>
+              <p class="mt-1 text-xl font-extrabold text-slate-800 sm:text-2xl">20,886,875</p>
+            </div>
+            <div class="col-span-2 rounded-xl bg-amber-50 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">Gender split</p>
+              <div class="mt-2 grid grid-cols-2 gap-2 text-sm">
+                <span>Women <strong class="text-base text-slate-800">4,343,301</strong></span>
+                <span>Men <strong class="text-base text-slate-800">16,543,574</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Detail panels -->
+    <section class="grid items-start gap-5 xl:grid-cols-3" aria-label="Detailed achievement cards">
+
+      <!-- Psychosocial -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="flex min-h-[4.5rem] items-center gap-3 bg-brand-red px-5 py-4 text-white">
+          <span class="text-3xl" aria-hidden="true">💬</span>
+          <h2 class="text-sm font-extrabold uppercase leading-tight">Psychosocial<br>Reintegration</h2>
+        </div>
+        <div class="space-y-4 p-4">
+          <div class="rounded-2xl border border-slate-100 bg-brand-red-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-red">Enrollment Counselling</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">208</td><td class="px-3 py-2 text-right">2,231</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">05</td><td class="px-3 py-2 text-right">521</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">203</td><td class="px-3 py-2 text-right">1,710</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-red-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-red">Completed Counselling</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">84</td><td class="px-3 py-2 text-right">1,745</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">03</td><td class="px-3 py-2 text-right">483</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">81</td><td class="px-3 py-2 text-right">1,262</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-red-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-red">Medical Treatment</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">19</td><td class="px-3 py-2 text-right">154</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">00</td><td class="px-3 py-2 text-right">39</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">19</td><td class="px-3 py-2 text-right">115</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-red-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-red">Psychiatric/Trauma Treatment</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">00</td><td class="px-3 py-2 text-right">11</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">00</td><td class="px-3 py-2 text-right">04</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">00</td><td class="px-3 py-2 text-right">07</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Economic -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="flex min-h-[4.5rem] items-center gap-3 bg-brand-blue px-5 py-4 text-white">
+          <span class="text-3xl" aria-hidden="true">📈</span>
+          <h2 class="text-sm font-extrabold uppercase leading-tight">Economic<br>Reintegration</h2>
+        </div>
+        <div class="space-y-4 p-4">
+          <div class="rounded-2xl border border-slate-100 bg-brand-blue-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-blue">Career Counselling</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">562</td><td class="px-3 py-2 text-right">7,537</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">09</td><td class="px-3 py-2 text-right">1,592</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">553</td><td class="px-3 py-2 text-right">5,945</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-blue-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-blue">Market Oriented Skill Training</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">47</td><td class="px-3 py-2 text-right">1,339</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">00</td><td class="px-3 py-2 text-right">459</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">47</td><td class="px-3 py-2 text-right">880</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-blue-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-blue">Entrepreneurship Development &amp; Financial Literacy Training</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">471</td><td class="px-3 py-2 text-right">4,472</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">09</td><td class="px-3 py-2 text-right">855</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">462</td><td class="px-3 py-2 text-right">3,617</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-blue-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-blue">Financial Assistance</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Group</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">449</td><td class="px-3 py-2 text-right">4,796</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">08</td><td class="px-3 py-2 text-right">1,189</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">441</td><td class="px-3 py-2 text-right">3,607</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <!-- Social -->
+      <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/95 shadow-card">
+        <div class="flex min-h-[4.5rem] items-center gap-3 bg-brand-purple px-5 py-4 text-white">
+          <span class="text-3xl" aria-hidden="true">🌐</span>
+          <h2 class="text-sm font-extrabold uppercase leading-tight">Social Reintegration &amp;<br>Awareness</h2>
+        </div>
+        <div class="space-y-4 p-4">
+          <div class="rounded-2xl border border-slate-100 bg-brand-purple-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-purple">Pot Song</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Metric</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Events</td><td class="px-3 py-2 text-right">77</td><td class="px-3 py-2 text-right">362</td></tr>
+                <tr><td colspan="3" class="bg-white/45 px-3 py-1.5 text-center text-xs font-bold text-slate-500">Participants</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">20,398</td><td class="px-3 py-2 text-right">89,586</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">4,046</td><td class="px-3 py-2 text-right">27,031</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">16,352</td><td class="px-3 py-2 text-right">62,555</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-purple-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-purple">Courtyard Meeting</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Metric</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Events</td><td class="px-3 py-2 text-right">1,169</td><td class="px-3 py-2 text-right">44,574</td></tr>
+                <tr><td colspan="3" class="bg-white/45 px-3 py-1.5 text-center text-xs font-bold text-slate-500">Participants</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">15,882</td><td class="px-3 py-2 text-right">607,221</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">12,338</td><td class="px-3 py-2 text-right">416,408</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">3,544</td><td class="px-3 py-2 text-right">190,813</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-brand-purple-soft p-4">
+            <h3 class="mb-3 text-sm font-bold text-brand-purple">Social Media</h3>
+            <table class="w-full overflow-hidden rounded-xl bg-white/70 text-sm">
+              <thead><tr class="text-xs uppercase tracking-wide text-slate-500"><th class="px-3 py-2 text-left">Views</th><th class="px-3 py-2 text-right">April</th><th class="px-3 py-2 text-right">To Date</th></tr></thead>
+              <tbody class="font-bold text-slate-800">
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Total</td><td class="px-3 py-2 text-right">345,787</td><td class="px-3 py-2 text-right">20,009,170</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Women</td><td class="px-3 py-2 text-right">67,707</td><td class="px-3 py-2 text-right">3,871,670</td></tr>
+                <tr class="border-t border-black/5"><td class="px-3 py-2">Men</td><td class="px-3 py-2 text-right">278,080</td><td class="px-3 py-2 text-right">16,137,500</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Selection table -->
+    <section class="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white/95 p-5 shadow-card sm:p-6" aria-label="Total primary selection table">
+      <div class="mb-5 flex flex-col gap-2 border-b-[3px] border-brand-pink pb-3 sm:flex-row sm:items-end sm:justify-between">
+        <h2 class="text-xl font-extrabold text-brand-pink sm:text-2xl">Total Primary Selection</h2>
+        <p class="text-sm text-slate-500">Segregation by migration region/country</p>
+      </div>
+      <div class="overflow-x-auto rounded-2xl border border-slate-200" role="region" aria-label="Scrollable total primary selection table" tabindex="0">
+        <table class="min-w-[920px] w-full border-collapse text-sm">
+          <thead>
+            <tr class="text-xs uppercase tracking-wide">
+              <th rowspan="2" class="sticky left-0 z-10 border border-slate-200 bg-teal-50 px-3 py-2.5 text-left font-extrabold text-brand-green-dark shadow-[4px_0_10px_rgba(0,0,0,0.04)]">Segregation</th>
+              <th rowspan="2" class="border border-slate-200 bg-sky-100 px-3 py-2.5 font-extrabold text-brand-blue">EUMS</th>
+              <th colspan="2" class="border border-slate-200 bg-amber-100 px-3 py-2.5 font-extrabold text-brand-red">Transit</th>
+              <th colspan="6" class="border border-slate-200 bg-lime-100 px-3 py-2.5 font-extrabold text-brand-olive">GCC</th>
+              <th rowspan="2" class="border border-slate-200 bg-slate-100 px-3 py-2.5 font-extrabold text-slate-800">Others</th>
+              <th rowspan="2" class="border border-slate-200 bg-indigo-50 px-3 py-2.5 font-extrabold text-slate-800">Total</th>
+            </tr>
+            <tr class="text-xs uppercase tracking-wide">
+              <th class="border border-slate-200 bg-amber-100 px-3 py-2 font-extrabold text-brand-red">Libya</th>
+              <th class="border border-slate-200 bg-amber-100 px-3 py-2 font-extrabold text-brand-red">Turkey</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">KSA</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">Oman</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">UAE</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">Qatar</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">Kuwait</th>
+              <th class="border border-slate-200 bg-lime-100 px-3 py-2 font-extrabold text-brand-olive">Bahrain</th>
+            </tr>
+          </thead>
+          <tbody class="font-bold text-slate-800">
+            <tr>
+              <td class="sticky left-0 z-10 border border-slate-200 bg-white px-3 py-2.5 shadow-[4px_0_10px_rgba(0,0,0,0.04)]">Total</td>
+              <td class="border border-slate-200 bg-sky-50 px-3 py-2.5 text-right text-brand-blue">1,414</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">2,639</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">15</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">2,421</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">619</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">482</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">272</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">66</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">10</td>
+              <td class="border border-slate-200 bg-slate-50 px-3 py-2.5 text-right">1,053</td>
+              <td class="border border-slate-200 bg-indigo-50/60 px-3 py-2.5 text-right">8,991</td>
+            </tr>
+            <tr>
+              <td class="sticky left-0 z-10 border border-slate-200 bg-white px-3 py-2.5 shadow-[4px_0_10px_rgba(0,0,0,0.04)]">Women</td>
+              <td class="border border-slate-200 bg-sky-50 px-3 py-2.5 text-right text-brand-blue">15</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">14</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">1</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">1,229</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">265</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">92</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">47</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">6</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">2</td>
+              <td class="border border-slate-200 bg-slate-50 px-3 py-2.5 text-right">221</td>
+              <td class="border border-slate-200 bg-indigo-50/60 px-3 py-2.5 text-right">1,892</td>
+            </tr>
+            <tr>
+              <td class="sticky left-0 z-10 border border-slate-200 bg-white px-3 py-2.5 shadow-[4px_0_10px_rgba(0,0,0,0.04)]">Men</td>
+              <td class="border border-slate-200 bg-sky-50 px-3 py-2.5 text-right text-brand-blue">1,399</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">2,625</td>
+              <td class="border border-slate-200 bg-amber-50 px-3 py-2.5 text-right text-brand-red">14</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">1,192</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">354</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">390</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">225</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">60</td>
+              <td class="border border-slate-200 bg-lime-50 px-3 py-2.5 text-right text-brand-olive">8</td>
+              <td class="border border-slate-200 bg-slate-50 px-3 py-2.5 text-right">832</td>
+              <td class="border border-slate-200 bg-indigo-50/60 px-3 py-2.5 text-right">7,099</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="mt-8 flex flex-wrap justify-between gap-4 border-t border-slate-200 pt-6 text-sm text-slate-500">
+      <span>Funded by the European Union</span>
+      <span>Co-financed and implemented by BRAC</span>
+      <span>April 2026</span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('fullscreen-btn');
+      var iconEnter = document.getElementById('icon-enter');
+      var iconExit = document.getElementById('icon-exit');
+      var label = document.getElementById('fullscreen-label');
+
+      function isFullscreen() {
+        return !!(document.fullscreenElement || document.webkitFullscreenElement);
+      }
+
+      function updateUi() {
+        var active = isFullscreen();
+        iconEnter.classList.toggle('hidden', active);
+        iconExit.classList.toggle('hidden', !active);
+        if (label) label.textContent = active ? 'Exit fullscreen' : 'Fullscreen';
+        btn.setAttribute('aria-label', active ? 'Exit fullscreen' : 'Enter fullscreen');
+        btn.title = active ? 'Exit fullscreen' : 'Enter fullscreen';
+      }
+
+      function requestFs() {
+        var el = document.documentElement;
+        var fn = el.requestFullscreen || el.webkitRequestFullscreen;
+        if (fn) return fn.call(el);
+        return Promise.reject(new Error('Fullscreen not supported'));
+      }
+
+      function exitFs() {
+        var fn = document.exitFullscreen || document.webkitExitFullscreen;
+        if (fn) return fn.call(document);
+        return Promise.reject(new Error('Fullscreen not supported'));
+      }
+
+      btn.addEventListener('click', function () {
+        if (isFullscreen()) {
+          exitFs().catch(function () {});
+        } else {
+          requestFs().catch(function () {});
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateUi);
+      document.addEventListener('webkitfullscreenchange', updateUi);
+      updateUi();
+    })();
+  </script>
+</body>
+</html>
